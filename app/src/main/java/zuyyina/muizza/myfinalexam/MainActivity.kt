@@ -25,10 +25,10 @@ class MainActivity : AppCompatActivity() {
 
         imageSlider.setImageList(imageList, ScaleTypes.FIT)
 
-        var container1 : CardView = findViewById(R.id.container1)
-        var container2 : CardView = findViewById(R.id.container2)
-        var container3 : CardView = findViewById(R.id.container3)
-        var container4 : CardView = findViewById(R.id.container4)
+        var container1 : CardView = findViewById(R.id.box1)
+        var container2 : CardView = findViewById(R.id.box2)
+        var container3 : CardView = findViewById(R.id.box3)
+        var container4 : CardView = findViewById(R.id.box4)
 
         container1.setOnClickListener{
             val intent= Intent(this, DetailActivity::class.java)
@@ -51,7 +51,7 @@ class MainActivity : AppCompatActivity() {
         container4.setOnClickListener{
             val intent= Intent(this, DetailActivity::class.java)
             intent.putExtra("image", R.drawable.health)
-            intent.putExtra("title", "Kesehatan & kecantikan")
+            intent.putExtra("title", "Kesehatan & Kecantikan")
             startActivity(intent)
         }
     }
